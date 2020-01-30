@@ -1,0 +1,29 @@
+{
+  "name": "mentions-api",
+  "version": "1.0.0",
+  "description": "Criação-API\r https://woliveiras.com.br/posts/construindo-uma-api-com-node-js-parte-1-criando-e-listando-dados/",
+  "main": "index.js",
+  "bin": {
+    "mentions-api": "server.js"
+  },
+  "scripts": {
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabacenzi/mentions-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabacenzi/mentions-api/issues"
+  },
+  "homepage": "https://github.com/gabacenzi/mentions-api#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
