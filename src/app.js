@@ -1,10 +1,10 @@
 const express = require('express');
 
 //App
-const app = express;
+const app = express();
 
 //Load routes
 const indexRoutes = require('./routes/index-routes');
-app.request('/',indexRoutes);
+app.use('/',indexRoutes);
 
 module.exports = app;
