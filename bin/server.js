@@ -1,6 +1,17 @@
+//const { port } = require('./config');
+//const dotenv = require('dotenv')
+//dotenv.config({path:'./.env'});
+const {resolve} = require('path')
+
+require('dotenv').config({path: resolve(__dirname,"../process.env")})
+
+const port = process.env.PORT;
+console.log(`Your port is ${port}`); 
+
 const app = require('../src/app');
 const http = require('http');
 const debug = require('debug')('nodestr:server');
+
 
 //PORT //based on express-generator
 function normalalizePort(val) {
@@ -15,8 +26,9 @@ function normalalizePort(val) {
   return false;
 }
 
-const port = normalalizePort(process.env.PORT || 3000);
-app.set('port',port);
+console.log('porta' + port);
+const portOk = normalalizePort(port);
+app.set('port',portOk);
 
 //error handler
 function onError(error) {
