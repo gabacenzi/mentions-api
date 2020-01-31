@@ -1,12 +1,9 @@
-//const { port } = require('./config');
-//const dotenv = require('dotenv')
-//dotenv.config({path:'./.env'});
 const {resolve} = require('path')
-
 require('dotenv').config({path: resolve(__dirname,"../process.env")})
 
 const port = process.env.PORT;
 console.log(`Your port is ${port}`); 
+console.log(`Nome da aplicação ${process.env.NAME_APP}`)
 
 const app = require('../src/app');
 const http = require('http');
