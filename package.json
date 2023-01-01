@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/gabacenzi/mentions-api#readme",
   "dependencies": {
-    "config": "^3.2.5",
+    "config": "^3.3.8",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
